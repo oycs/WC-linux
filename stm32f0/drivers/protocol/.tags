@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CMD_READ_3CODE	protocol.h	20;"	d
+DELAY_US	protocol.c	9;"	d	file:
+LEN_CMD	protocol.h	25;"	d
+LEN_CRC	protocol.h	27;"	d
+LEN_LEN	protocol.h	26;"	d
+MAC_LEN	protocol.h	24;"	d
+REC_TIME_OUT	protocol.c	7;"	d	file:
+RSP_CHIP_RSP_ERR	protocol.h	17;"	d
+RSP_CMD_ERR	protocol.h	15;"	d
+RSP_CMD_OK	protocol.h	13;"	d
+RSP_DATA_ERR	protocol.h	16;"	d
+RSP_DATA_OK	protocol.h	14;"	d
+WAIT_TIME_OUT	protocol.c	6;"	d	file:
+__PROTOCOL_H	protocol.h	2;"	d
+caculate_crc	protocol.c	/^static void caculate_crc(packet_t *packet)$/;"	f	file:
+cmd	protocol.h	/^	uint8_t cmd;$/;"	m	struct:cmd_packet
+cmd_packet	protocol.h	/^typedef struct cmd_packet {$/;"	s
+cmd_packet_init	protocol.c	/^static void cmd_packet_init(packet_t *packet, uint8_t cmd, uint8_t len, uint8_t *buf)$/;"	f	file:
+crc	protocol.h	/^	uint8_t crc;$/;"	m	struct:cmd_packet
+crc8_gen	protocol.c	/^static uint16_t crc8_gen(const uint8_t *ptr, uint8_t len, uint16_t old_crc)$/;"	f	file:
+data	protocol.h	/^	uint8_t *data;$/;"	m	struct:cmd_packet
+data_len	protocol.h	/^	uint8_t data_len;$/;"	m	struct:cmd_packet
+packet_t	protocol.h	/^}packet_t;$/;"	t	typeref:struct:cmd_packet
+parse_packet	protocol.c	/^char parse_packet(uint8_t *mac_addr, uint8_t *buf, uint8_t *len)$/;"	f
+receive_cmd_packet	protocol.c	/^static char receive_cmd_packet(packet_t *packet)$/;"	f	file:
+send_cmd_packet	protocol.c	/^static char send_cmd_packet(packet_t *packet)$/;"	f	file:
+uart_receive	protocol.c	/^static int8_t uart_receive(uint32_t time_count, uint8_t *buf, size_t nbyte)$/;"	f	file:

@@ -1,0 +1,2 @@
+mainmenu "STM32F103ZET6 drivers Configuration"
+source "drivers/Kconfig"
