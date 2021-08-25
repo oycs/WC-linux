@@ -1,0 +1,29 @@
+############所有驱动#########################
+menu "select driver"
+
+config UART_PROTOCOL
+	tristate "uart protocol"
+	default n
+	select BASE_PROTOCOL
+	---help---
+	uart protocol.
+
+config USART
+	tristate "usart Driver"
+	default y
+	---help---
+	usart device driver.
+
+config DELAY
+	tristate "DELAY Driver"
+	default y
+	---help---
+	delay device driver.
+
+config BASE_PROTOCOL
+	tristate "base protocol Driver"
+	default y
+	---help---
+	base protocol support.
+endmenu
+############所有驱动#########################
